@@ -1,0 +1,26 @@
+SELECT Genre, AVERAGE(Critic_Score) AS sports_critic_score
+FROM sales
+WHERE Genre LIKE “Sports”;
+
+SELECT Genre, AVERAGE(Critic_Score) AS shooter_critic_score
+FROM sales
+WHERE Genre LIKE “Shooter”;
+
+SELECT Genre, AVERAGE(global_sales) AS average_global_sales, MIN(global_sales) AS min_global_sales, MAX(global_sales) AS max_global_sales
+FROM sales;
+
+SELECT Genre, AVERAGE(global_sales) AS average_global_sales, MIN(global_sales) AS min_global_sales, MAX(global_sales) AS max_global_sales
+FROM sales
+WHERE Genre LIKE “Sports”;
+
+SELECT Genre, AVERAGE(global_sales) AS average_global_sales, MIN(global_sales) AS min_global_sales, MAX(global_sales) AS max_global_sales
+FROM sales
+WHERE Genre LIKE “Shooter”;
+
+SELECT global_sales, COUNT(global_sales) AS count
+FROM sales
+WHERE Genre LIKE “Sports”;
+
+SELECT global_sales, COUNT(global_sales) AS count
+FROM sales
+WHERE Genre LIKE “Shooter”;

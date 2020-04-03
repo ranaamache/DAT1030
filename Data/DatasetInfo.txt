@@ -1,0 +1,3 @@
+Dataset can be found at: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
+Dataset version used is: Version 2 file
+Dataset file name:       Video_Games_Sales_as_at_22_Dec_2016.csv
